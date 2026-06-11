@@ -12,6 +12,11 @@ header {
     padding: 20px;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+}
+
 nav a {
     color: white;
     margin-right: 15px;
@@ -50,4 +55,34 @@ button {
     padding: 10px 20px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.destacado {
+    color: #0d9488;
+    font-weight: bold;
+}
+
+.aviso {
+    color: #e11d48;
+    font-style: italic;
+}
+
+.grande {
+    font-size:20px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
 }
